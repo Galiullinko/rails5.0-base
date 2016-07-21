@@ -24,8 +24,16 @@ gem 'jbuilder', '~> 2.5'
 gem "devise"
 
 group :test do
+  gem "capybara"
+  gem "capybara-webkit"
+  gem "codeclimate-test-reporter", require: false
+  gem "database_cleaner"
+  gem "email_spec"
+  gem "formulaic"
+  gem "launchy"
   gem "rspec-its"
-  gem "rspec-core"
+  gem "shoulda-matchers"
+  gem "webmock", require: false
 end
 
 group :development, :test do
