@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+
+set -e
+
+bin/rspec spec
+bin/rails jasmine:ci
+bin/quality
