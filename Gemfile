@@ -6,11 +6,11 @@ gem "rails", "~> 5.0.0"
 gem "pg", "~> 0.18"
 
 # Use Puma as the app server
-gem 'puma', '~> 3.0'
+gem "puma", "~> 3.0"
 # Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
-gem 'turbolinks', '~> 5'
+gem "turbolinks", "~> 5"
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 2.5'
+gem "jbuilder", "~> 2.5"
 
 # assets
 gem "autoprefixer-rails"
@@ -22,7 +22,8 @@ gem "sass-rails", "~> 5.0.0"
 gem "skim"
 gem "therubyracer", platforms: :ruby
 gem "uglifier", ">= 2.7.2"
-#views
+
+# views
 gem "active_link_to"
 gem "metamagic"
 gem "simple_form"
@@ -31,7 +32,7 @@ gem "slim"
 gem "decent_decoration"
 gem "decent_exposure"
 gem "devise"
-gem 'activemodel-serializers-xml', git: 'https://github.com/rails/activemodel-serializers-xml'
+gem "activemodel-serializers-xml", git: "https://github.com/rails/activemodel-serializers-xml"
 gem "flamegraph"
 gem "google-analytics-rails"
 gem "health_check"
