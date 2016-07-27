@@ -85,8 +85,5 @@ group :development do
   gem "letter_opener"
   gem "rails-erd"
   gem "slim-rails"
-  gem "spring"
-  gem "spring-commands-rspec"
   gem "web-console", "~> 2.0"
-  gem "listen"
 end
