@@ -1,7 +1,7 @@
 class Decorator
-  def initialize(object)
-    @object = object
+  delegate :id, to: :record
+
+  def initialize(record)
+    @record = record
   end
-
-
 end
