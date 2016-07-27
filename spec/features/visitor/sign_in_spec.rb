@@ -9,7 +9,7 @@ feature "Sign in" do
 
     fill_in("user_email", with: user.email)
     fill_in("user_password", with: user.password)
-    save_and_open_screenshot
+    # save_and_open_screenshot
     click_on "Log in"
 
     expect(page).to have_content "Home"
@@ -20,7 +20,7 @@ feature "Sign in" do
 
     fill_in("user_email", with: user.email)
     fill_in("user_password", with: "sosipisos")
-    save_and_open_screenshot
+    # save_and_open_screenshot
 
     click_on "Log in"
 
