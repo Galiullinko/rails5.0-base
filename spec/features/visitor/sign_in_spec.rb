@@ -1,12 +1,29 @@
 require "rails_helper"
 
 feature "Sign in" do
-  scenario "Sign in with correct credentials" do
-    visit "/users/sign_in/"
-    fill_in "user_email", :with => "galiullinko@gmail.com"
-    fill_in "user_password", :with => "123456"
-    save_and_open_page
-    click_button "Log in"
+  binding.pry
+  let(:user) { create :user }
+
+  scenario "with correct credentials" do
+    visit new_user_session_path
+
+    fill_in("user_email", with: user.email)
+    fill_in("user_password", with: user.password)
+    save_and_open_screenshot
+    click_on "Log in"
+
     expect(page).to have_content "Home"
+  end
+
+  scenario "with wrong credentials" do
+    visit new_user_session_path
+
+    fill_in("user_email", with: user.email)
+    fill_in("user_password", with: "sosipisos")
+    save_and_open_screenshot
+
+    click_on "Log in"
+
+    expect(page).to have_content "Log in"
   end
 end

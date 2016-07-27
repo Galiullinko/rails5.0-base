@@ -1,4 +1,4 @@
-require "spec_helper"
+require "rails_helper"
 
 feature "Sign out as user" do
   scenario "Sign out" do
