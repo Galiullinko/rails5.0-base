@@ -8,7 +8,6 @@ feature "Sign in", js: true do
 
     fill_in("user_email", with: user.email)
     fill_in("user_password", with: user.password)
-    save_and_open_screenshot
 
     click_on "Log in"
 
