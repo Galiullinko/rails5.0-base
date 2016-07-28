@@ -46,6 +46,7 @@ gem "responders"
 gem "rollbar"
 gem "seedbank"
 gem "stackprof"
+gem "dotenv-rails"
 
 group :test do
   gem "capybara"
@@ -66,7 +67,6 @@ group :development, :test do
   gem "bundler-audit", require: false
   gem "byebug"
   gem "coffeelint"
-  gem "dotenv-rails"
   gem "factory_girl_rails"
   gem "faker"
   gem "jasmine", "> 2.0"
