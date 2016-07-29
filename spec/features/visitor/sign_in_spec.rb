@@ -8,9 +8,7 @@ feature "Sign in" do
 
     fill_in("user_email", with: user.email)
     fill_in("user_password", with: user.password)
-
-    click_on "Log in"
-
+    click_button "Sign in"
     expect(page).to have_content "Home"
   end
 
@@ -20,8 +18,8 @@ feature "Sign in" do
     fill_in("user_email", with: user.email)
     fill_in("user_password", with: "sosipisos")
 
-    click_on "Log in"
+    click_button "Sign in"
 
-    expect(page).to have_content "Log in"
+    expect(page).to have_content "Sign in"
   end
 end
